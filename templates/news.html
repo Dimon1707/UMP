@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ВГУЭС</title>
+    <link rel="stylesheet" href="{% static 'news.css' %}">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="logo">
+            ВГУЭС
+        </div>
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href={% url 'main' %}>
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href={% url 'groups' %}>
+                        Объединения
+                    </a>
+                </li>
+                <li>
+                    <button class="nav_btn" type="button">
+                        <a href={% url 'news' %}>
+                            Новости
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <a href={% url 'profile' %}>
+                        Профиль
+                    </a>
+                </li>
+                <li>
+                    <a href={% url 'register' %}>
+                        Регистрация
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+</body>
+</html>
