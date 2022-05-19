@@ -49,9 +49,10 @@
                             Новости
                     </a>
                 </li>
+
                 <li>
-                    <a href={% url 'profile' %}>
-                            Профиль
+                    <a href={% url 'login' %}>
+                           Профиль
                     </a>
                 </li>
                 <li>
@@ -63,5 +64,9 @@
         </nav>
     </div>
 </header>
+{% block main %}
+
+{% endblock %}
 </body>
 </html>
+
