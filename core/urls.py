@@ -1,4 +1,3 @@
-from django.contrib.auth.views import LoginView
 from django.urls import path
 from core.views import register, main, groups, news, profile
 

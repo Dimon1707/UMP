@@ -15,11 +15,13 @@
     box-sizing: border-box;
     font-weight: 700;
     background-color: #1565c0;
+    position: fixed;
+    z-index: 1;
 }
 
 .wrap {
     width: 100%;
-    max-width: 1180px;
+    max-width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -81,4 +83,50 @@ a:hover {
     color: #ffebee;
     font-weight: 700;
     font-size: 20px;
+}
+/*section {*/
+/*    background: url("images/fon.jpg") no-repeat;*/
+/*    height: 720px;*/
+/*    width: 1280px;*/
+/*}*/
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("images/fon.jpg") no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.container {
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.content {
+    transform: translateX(-100px);
+    height: 200px;
+    max-width: 700px;
+    width: 550px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 110px;
 }
