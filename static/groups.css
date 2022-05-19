@@ -65,8 +65,20 @@
     font-size: 30px;
 }
 
+
 a {
     text-decoration: none;
     color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px 15px;
 }
 
+a:hover {
+    background-color: rgb(20, 20, 105);
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #ffebee;
+    font-weight: 700;
+    font-size: 20px;
+}
